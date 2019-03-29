@@ -44,7 +44,7 @@
     activated() {
       window.addEventListener('scroll', this.handleScroll)
     },
-    deactivated () {
+    deactivated () {//取消全局变量
       window.removeEventListener('scroll', this.handleScroll)
     }
   }
@@ -69,6 +69,7 @@
       font-size: .4rem
 
   .header-fixed
+    z-index :2
     position: fixed
     top: 0
     left: 0
